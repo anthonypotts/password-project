@@ -1,16 +1,25 @@
-// Assignment code here
-
-
-// Get references to the #generate element
+// Link to HTML //
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// VARIABLES //
+var charLower = "abcdefghijklmnopqrstuvwxyz";
+var charUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numRandom = "1234567890";
+var specialChar = "!@#$%^&*()-_=+`~<>,.;:/?[{]}";
 
-  passwordText.value = password;
-
+var newPassword = ""
+var userChoices;
+var password = {
+  charLower: true,
+  charUpper: true,
+  numRandom: true,
+  specialChar: true,
+  reset: function() {
+    this.charLower = true;
+    this.charUpper = true;
+    this.numRandom = true;
+    this.specialChar = true;
+  }
 }
 
 // Add event listener to generate button
