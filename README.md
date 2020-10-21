@@ -1,8 +1,9 @@
 # Password-Project
 
-## To build a webiste that generates a random password based on their desired criteria.
+## Purpose:
+To build a website that generates a random password based on users' choices from predetermined options.
 
-## Built With
+## Built With:
 * HTML
 * CSS
 * JS
